@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Runtime.InteropServices.ComTypes;
+using System;
 
 namespace tamabitchy
 {
@@ -6,7 +7,11 @@ namespace tamabitchy
     {
         static void Main(string[] args)
         {
+            Console.Title = "tAMAbITCHY.tm";
             Console.WriteLine("Welcome to tamabitchy.TM(independent from Tamagotchi.TM)");
+            Console.WriteLine("please name you pet....");
+            string name = Console.ReadLine();
+            Console.WriteLine("so " + name + " it is decied then.");
             Console.ReadLine();
         }
     }
